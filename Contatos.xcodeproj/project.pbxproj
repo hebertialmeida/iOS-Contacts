@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A50235B16A059C400E3FDDB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A50235D16A059C400E3FDDB /* Localizable.strings */; };
 		1A60634316A02E4B00F28FCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A60634216A02E4B00F28FCF /* UIKit.framework */; };
 		1A60634516A02E4B00F28FCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A60634416A02E4B00F28FCF /* Foundation.framework */; };
 		1A60634716A02E4B00F28FCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A60634616A02E4B00F28FCF /* CoreGraphics.framework */; };
@@ -16,9 +17,31 @@
 		1A60635516A02E4B00F28FCF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A60635416A02E4B00F28FCF /* Default.png */; };
 		1A60635716A02E4B00F28FCF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A60635616A02E4B00F28FCF /* Default@2x.png */; };
 		1A60635916A02E4B00F28FCF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A60635816A02E4B00F28FCF /* Default-568h@2x.png */; };
+		1A6063A316A02F6D00F28FCF /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A60639616A02F6C00F28FCF /* Contato.m */; };
+		1A6063A416A02F6D00F28FCF /* ContatosNoMapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A60639816A02F6C00F28FCF /* ContatosNoMapaViewController.m */; };
+		1A6063A516A02F6D00F28FCF /* ContatosNoMapaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A60639916A02F6C00F28FCF /* ContatosNoMapaViewController.xib */; };
+		1A6063A616A02F6D00F28FCF /* customCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A60639B16A02F6C00F28FCF /* customCell.m */; };
+		1A6063A716A02F6D00F28FCF /* customCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A60639C16A02F6C00F28FCF /* customCell.xib */; };
+		1A6063A816A02F6D00F28FCF /* FormularioContatoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A60639E16A02F6D00F28FCF /* FormularioContatoViewController.m */; };
+		1A6063A916A02F6D00F28FCF /* FormularioContatoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A60639F16A02F6D00F28FCF /* FormularioContatoViewController.xib */; };
+		1A6063AA16A02F6D00F28FCF /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6063A216A02F6D00F28FCF /* ListaContatosViewController.m */; };
+		1A6063B116A02F9100F28FCF /* gps.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6063AB16A02F9100F28FCF /* gps.png */; };
+		1A6063B216A02F9100F28FCF /* gps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6063AC16A02F9100F28FCF /* gps@2x.png */; };
+		1A6063B316A02F9100F28FCF /* lista-contatos.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6063AD16A02F9100F28FCF /* lista-contatos.png */; };
+		1A6063B416A02F9100F28FCF /* lista-contatos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6063AE16A02F9100F28FCF /* lista-contatos@2x.png */; };
+		1A6063B516A02F9100F28FCF /* mapa-contatos.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6063AF16A02F9100F28FCF /* mapa-contatos.png */; };
+		1A6063B616A02F9100F28FCF /* mapa-contatos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6063B016A02F9100F28FCF /* mapa-contatos@2x.png */; };
+		1A6063B916A02FCF00F28FCF /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6063B816A02FCF00F28FCF /* TPKeyboardAvoidingScrollView.m */; };
+		1A6063BC16A0300500F28FCF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6063BB16A0300500F28FCF /* Social.framework */; };
+		1A6063BE16A0302400F28FCF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6063BD16A0302400F28FCF /* MapKit.framework */; };
+		1A6063C016A0308100F28FCF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6063BF16A0308100F28FCF /* MessageUI.framework */; };
+		1A6063C216A035BC00F28FCF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6063C116A035BC00F28FCF /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A50235816A0596D00E3FDDB /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A50235C16A059C400E3FDDB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1A50235E16A059C900E3FDDB /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1A60633E16A02E4B00F28FCF /* Contatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A60634216A02E4B00F28FCF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A60634416A02E4B00F28FCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +55,32 @@
 		1A60635416A02E4B00F28FCF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1A60635616A02E4B00F28FCF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1A60635816A02E4B00F28FCF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1A60639516A02F6C00F28FCF /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
+		1A60639616A02F6C00F28FCF /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
+		1A60639716A02F6C00F28FCF /* ContatosNoMapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatosNoMapaViewController.h; sourceTree = "<group>"; };
+		1A60639816A02F6C00F28FCF /* ContatosNoMapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatosNoMapaViewController.m; sourceTree = "<group>"; };
+		1A60639916A02F6C00F28FCF /* ContatosNoMapaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContatosNoMapaViewController.xib; sourceTree = "<group>"; };
+		1A60639A16A02F6C00F28FCF /* customCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customCell.h; sourceTree = "<group>"; };
+		1A60639B16A02F6C00F28FCF /* customCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customCell.m; sourceTree = "<group>"; };
+		1A60639C16A02F6C00F28FCF /* customCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customCell.xib; sourceTree = "<group>"; };
+		1A60639D16A02F6D00F28FCF /* FormularioContatoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormularioContatoViewController.h; sourceTree = "<group>"; };
+		1A60639E16A02F6D00F28FCF /* FormularioContatoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormularioContatoViewController.m; sourceTree = "<group>"; };
+		1A60639F16A02F6D00F28FCF /* FormularioContatoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormularioContatoViewController.xib; sourceTree = "<group>"; };
+		1A6063A016A02F6D00F28FCF /* ListaContatosProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosProtocol.h; sourceTree = "<group>"; };
+		1A6063A116A02F6D00F28FCF /* ListaContatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosViewController.h; sourceTree = "<group>"; };
+		1A6063A216A02F6D00F28FCF /* ListaContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosViewController.m; sourceTree = "<group>"; };
+		1A6063AB16A02F9100F28FCF /* gps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gps.png; sourceTree = "<group>"; };
+		1A6063AC16A02F9100F28FCF /* gps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gps@2x.png"; sourceTree = "<group>"; };
+		1A6063AD16A02F9100F28FCF /* lista-contatos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lista-contatos.png"; sourceTree = "<group>"; };
+		1A6063AE16A02F9100F28FCF /* lista-contatos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lista-contatos@2x.png"; sourceTree = "<group>"; };
+		1A6063AF16A02F9100F28FCF /* mapa-contatos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapa-contatos.png"; sourceTree = "<group>"; };
+		1A6063B016A02F9100F28FCF /* mapa-contatos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapa-contatos@2x.png"; sourceTree = "<group>"; };
+		1A6063B716A02FCF00F28FCF /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		1A6063B816A02FCF00F28FCF /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		1A6063BB16A0300500F28FCF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1A6063BD16A0302400F28FCF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1A6063BF16A0308100F28FCF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1A6063C116A035BC00F28FCF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +88,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6063C216A035BC00F28FCF /* CoreLocation.framework in Frameworks */,
+				1A6063C016A0308100F28FCF /* MessageUI.framework in Frameworks */,
+				1A6063BE16A0302400F28FCF /* MapKit.framework in Frameworks */,
+				1A6063BC16A0300500F28FCF /* Social.framework in Frameworks */,
 				1A60634316A02E4B00F28FCF /* UIKit.framework in Frameworks */,
 				1A60634516A02E4B00F28FCF /* Foundation.framework in Frameworks */,
 				1A60634716A02E4B00F28FCF /* CoreGraphics.framework in Frameworks */,
@@ -68,6 +121,10 @@
 		1A60634116A02E4B00F28FCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A6063C116A035BC00F28FCF /* CoreLocation.framework */,
+				1A6063BF16A0308100F28FCF /* MessageUI.framework */,
+				1A6063BD16A0302400F28FCF /* MapKit.framework */,
+				1A6063BB16A0300500F28FCF /* Social.framework */,
 				1A60634216A02E4B00F28FCF /* UIKit.framework */,
 				1A60634416A02E4B00F28FCF /* Foundation.framework */,
 				1A60634616A02E4B00F28FCF /* CoreGraphics.framework */,
@@ -78,8 +135,23 @@
 		1A60634816A02E4B00F28FCF /* Contatos */ = {
 			isa = PBXGroup;
 			children = (
+				1A6063BA16A02FDB00F28FCF /* Lib */,
 				1A60635116A02E4B00F28FCF /* AppDelegate.h */,
 				1A60635216A02E4B00F28FCF /* AppDelegate.m */,
+				1A60639516A02F6C00F28FCF /* Contato.h */,
+				1A60639616A02F6C00F28FCF /* Contato.m */,
+				1A60639716A02F6C00F28FCF /* ContatosNoMapaViewController.h */,
+				1A60639816A02F6C00F28FCF /* ContatosNoMapaViewController.m */,
+				1A60639916A02F6C00F28FCF /* ContatosNoMapaViewController.xib */,
+				1A6063A016A02F6D00F28FCF /* ListaContatosProtocol.h */,
+				1A6063A116A02F6D00F28FCF /* ListaContatosViewController.h */,
+				1A6063A216A02F6D00F28FCF /* ListaContatosViewController.m */,
+				1A60639A16A02F6C00F28FCF /* customCell.h */,
+				1A60639B16A02F6C00F28FCF /* customCell.m */,
+				1A60639C16A02F6C00F28FCF /* customCell.xib */,
+				1A60639D16A02F6D00F28FCF /* FormularioContatoViewController.h */,
+				1A60639E16A02F6D00F28FCF /* FormularioContatoViewController.m */,
+				1A60639F16A02F6D00F28FCF /* FormularioContatoViewController.xib */,
 				1A60634916A02E4B00F28FCF /* Supporting Files */,
 			);
 			path = Contatos;
@@ -89,14 +161,30 @@
 			isa = PBXGroup;
 			children = (
 				1A60634A16A02E4B00F28FCF /* Contatos-Info.plist */,
+				1A50235D16A059C400E3FDDB /* Localizable.strings */,
 				1A60634B16A02E4B00F28FCF /* InfoPlist.strings */,
 				1A60634E16A02E4B00F28FCF /* main.m */,
 				1A60635016A02E4B00F28FCF /* Contatos-Prefix.pch */,
 				1A60635416A02E4B00F28FCF /* Default.png */,
 				1A60635616A02E4B00F28FCF /* Default@2x.png */,
 				1A60635816A02E4B00F28FCF /* Default-568h@2x.png */,
+				1A6063AB16A02F9100F28FCF /* gps.png */,
+				1A6063AC16A02F9100F28FCF /* gps@2x.png */,
+				1A6063AD16A02F9100F28FCF /* lista-contatos.png */,
+				1A6063AE16A02F9100F28FCF /* lista-contatos@2x.png */,
+				1A6063AF16A02F9100F28FCF /* mapa-contatos.png */,
+				1A6063B016A02F9100F28FCF /* mapa-contatos@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A6063BA16A02FDB00F28FCF /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				1A6063B716A02FCF00F28FCF /* TPKeyboardAvoidingScrollView.h */,
+				1A6063B816A02FCF00F28FCF /* TPKeyboardAvoidingScrollView.m */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +222,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				pt,
 			);
 			mainGroup = 1A60633316A02E4B00F28FCF;
 			productRefGroup = 1A60633F16A02E4B00F28FCF /* Products */;
@@ -154,6 +243,16 @@
 				1A60635516A02E4B00F28FCF /* Default.png in Resources */,
 				1A60635716A02E4B00F28FCF /* Default@2x.png in Resources */,
 				1A60635916A02E4B00F28FCF /* Default-568h@2x.png in Resources */,
+				1A6063A516A02F6D00F28FCF /* ContatosNoMapaViewController.xib in Resources */,
+				1A6063A716A02F6D00F28FCF /* customCell.xib in Resources */,
+				1A6063A916A02F6D00F28FCF /* FormularioContatoViewController.xib in Resources */,
+				1A6063B116A02F9100F28FCF /* gps.png in Resources */,
+				1A6063B216A02F9100F28FCF /* gps@2x.png in Resources */,
+				1A6063B316A02F9100F28FCF /* lista-contatos.png in Resources */,
+				1A6063B416A02F9100F28FCF /* lista-contatos@2x.png in Resources */,
+				1A6063B516A02F9100F28FCF /* mapa-contatos.png in Resources */,
+				1A6063B616A02F9100F28FCF /* mapa-contatos@2x.png in Resources */,
+				1A50235B16A059C400E3FDDB /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,16 +265,32 @@
 			files = (
 				1A60634F16A02E4B00F28FCF /* main.m in Sources */,
 				1A60635316A02E4B00F28FCF /* AppDelegate.m in Sources */,
+				1A6063A316A02F6D00F28FCF /* Contato.m in Sources */,
+				1A6063A416A02F6D00F28FCF /* ContatosNoMapaViewController.m in Sources */,
+				1A6063A616A02F6D00F28FCF /* customCell.m in Sources */,
+				1A6063A816A02F6D00F28FCF /* FormularioContatoViewController.m in Sources */,
+				1A6063AA16A02F6D00F28FCF /* ListaContatosViewController.m in Sources */,
+				1A6063B916A02FCF00F28FCF /* TPKeyboardAvoidingScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1A50235D16A059C400E3FDDB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A50235C16A059C400E3FDDB /* en */,
+				1A50235E16A059C900E3FDDB /* pt */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		1A60634B16A02E4B00F28FCF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1A60634C16A02E4B00F28FCF /* en */,
+				1A50235816A0596D00E3FDDB /* pt */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -274,6 +389,7 @@
 				1A60635E16A02E4B00F28FCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

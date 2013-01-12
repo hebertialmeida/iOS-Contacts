@@ -2,17 +2,57 @@
 //  AppDelegate.m
 //  Contatos
 //
-//  Created by Heberti Almeida on 11/01/13.
+//  Created by Heberti Almeida on 07/01/13.
 //  Copyright (c) 2013 Heberti Almeida. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ListaContatosViewController.h"
+#import "ContatosNoMapaViewController.h"
 
 @implementation AppDelegate
+
+@synthesize contatos, arquivoContatos;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // Dir and file to save
+    NSArray *userDirs = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentDir = [userDirs objectAtIndex:0];
+    self.arquivoContatos = [NSString stringWithFormat:@"%@/ArquivoContatos", documentDir];
+    
+    // Get Contatos from file
+    self.contatos = [NSKeyedUnarchiver unarchiveObjectWithFile:self.arquivoContatos];
+    if (!self.contatos) {
+        self.contatos = [[NSMutableArray alloc] init];
+    }
+    
+    
+    // Init list
+    ListaContatosViewController *lista = [[ListaContatosViewController alloc] init];
+    lista.contatos = self.contatos;
+    
+    // Add Navigation Bar
+    UINavigationController *nav = [[UINavigationController alloc]
+                                   initWithRootViewController:lista];
+    self.window.rootViewController = nav;
+    
+    // Contatos no mapa
+    ContatosNoMapaViewController *contatosMapa = [[ContatosNoMapaViewController alloc] init];
+    contatosMapa.contatos = self.contatos;
+    UINavigationController *mapaNavigation = [[UINavigationController alloc]
+                                              initWithRootViewController:contatosMapa];
+    
+    
+    // Tab Bar
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = [NSArray arrayWithObjects:nav, mapaNavigation, nil];
+    
+    
+    self.window.rootViewController = tabBarController;
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -29,6 +69,7 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [NSKeyedArchiver archiveRootObject:self.contatos toFile:self.arquivoContatos];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

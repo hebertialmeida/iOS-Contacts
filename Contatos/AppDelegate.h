@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  Contatos
 //
-//  Created by Heberti Almeida on 11/01/13.
+//  Created by Heberti Almeida on 07/01/13.
 //  Copyright (c) 2013 Heberti Almeida. All rights reserved.
 //
 
@@ -11,5 +11,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong) NSMutableArray *contatos;
+@property (strong) NSString *arquivoContatos;
 
 @end
